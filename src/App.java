@@ -11,6 +11,7 @@ public class App {
         API api = API.NASA;
         // API api = API.IMDB_TOP_MOVIES;
         // API api = API.IMDB_TOP_SERIES;
+        // API api = API.LINGUAGENS_PREFERIDAS;
 
         String url = api.getUrl();
         ExtratorDeConteudo extrator = api.getExtrator();
@@ -23,7 +24,7 @@ public class App {
 
         var geradora = new GeradoraDeFigurinhas();
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < conteudos.size(); i++) {
 
             Conteudo conteudo = conteudos.get(i);
 
