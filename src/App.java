@@ -8,10 +8,11 @@ public class App {
 
         // fazer uma conexão HTTP e buscar os top 250 filmes
 
-        API api = API.NASA;
+        // API api = API.NASA;
         // API api = API.IMDB_TOP_MOVIES;
         // API api = API.IMDB_TOP_SERIES;
         // API api = API.LINGUAGENS_PREFERIDAS;
+        API api = API.STICKERS;
 
         String url = api.getUrl();
         ExtratorDeConteudo extrator = api.getExtrator();
